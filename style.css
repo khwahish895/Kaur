@@ -1,0 +1,610 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/office-removebg-preview.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 100px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 20px;
+    color: #fff;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color:#fff;
+    border:1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+}
+nav .bx{
+    display: none;
+}
+
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: fixed;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: 0;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .bx{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+    
+}
+
+
+
+/*----------footer---------*/
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.icons .bx{
+    color: #f44336;
+    margin: 0 5px;
+    cursor: pointer;
+    padding: 18px;
+}
+.bxs-heart{
+    color: #f44336;
+}
+
+/*-----------about us page---------*/
+
+
+.sub-header{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/office-removebg-preview.png);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+.sub-header h1{
+    margin-top: 100px;
+}
+.about-us{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.about-col{
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+.about-col h1{
+    text-align: center;
+}
+.about-text, .about-video {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 300px;
+}
+.about-col img{
+    width: 50%;
+}
+.about-col h1{
+    padding-top: 0;
+}
+.about-col p{
+    padding: 15px 0 25px;
+}
+.red-btn{
+    border: 1px solid #f44336;
+    background: transparent;
+    color: #f44336;
+}
+.red-btn:hover{
+    color: #fff;
+}
+
+.products {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 50px 5%;
+}
+
+.product-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+}
+
+.product-details {
+    padding: 15px;
+}
+
+.product-details h2 {
+    margin: 0;
+    font-size: 22px;
+    color: #333;
+}
+
+.price {
+    color: #e74c3c;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.product-details p {
+    line-height: 1.6;
+    color: #555;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.hero-section {
+    background-image: url('hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero-section .hero-text {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    padding: 20px 40px;
+    border-radius: 8px;
+}
+
+.manufacturing-process {
+    margin: 50px 10%;
+    text-align: center;
+}
+
+.manufacturing-process h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.process-step {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.process-step img {
+    width: 40%;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.step-details {
+    max-width: 55%;
+    text-align: left;
+}
+
+.step-details h3 {
+    font-size: 22px;
+    color: #333;
+}
+
+.step-details p {
+    line-height: 1.6;
+    color: #555;
+}
+
+.manufacturing-stats {
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    color: #fff;
+    padding: 50px 10%;
+}
+
+.stat h3 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.stat p {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.featured-post {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 10%;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.featured-post img {
+    width: 40%;
+    border-radius: 8px;
+}
+
+.post-details {
+    max-width: 55%;
+}
+
+.post-details h2 {
+    font-size: 28px;
+    margin: 0 0 10px;
+    color: #333;
+}
+
+.post-details p {
+    margin: 5px 0;
+    color: #555;
+    line-height: 1.6;
+}
+
+.read-more {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.read-more:hover {
+    background-color: #555;
+}
+
+.recent-posts {
+    margin: 50px 10%;
+    text-align: center;
+}
+
+.recent-posts h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.post-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.post-card {
+    background-color: #fff;
+    width: 30%;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.post-card:hover {
+    transform: scale(1.05);
+}
+
+.post-card img {
+    width: 100%;
+    height: auto;
+}
+
+.post-info {
+    padding: 15px;
+    text-align: left;
+}
+
+.post-info h3 {
+    font-size: 22px;
+    margin: 0;
+    color: #333;
+}
+
+.post-info p {
+    color: #777;
+    margin: 5px 0 10px;
+}
+
+.reviews-section {
+    margin: 50px 10%;
+}
+
+.reviews-section h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.review {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.review-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.review-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.review-header h3 {
+    margin: 0;
+    font-size: 20px;
+    color: #333;
+}
+
+.review-header p {
+    margin: 0;
+    color: #e74c3c;
+    font-size: 18px;
+}
+
+.review-date {
+    color: #777;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.review-text {
+    margin-top: 10px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.review-form-section {
+    margin: 50px 10%;
+}
+
+.review-form-section h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.review-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.review-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+.review-form input,
+.review-form select,
+.review-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    color: #333;
+}
+
+.review-form input[type="file"] {
+    padding: 0;
+}
+
+.review-form button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.review-form button:hover {
+    background-color: #555;
+}
+
+.contact-section {
+    margin: 50px 10%;
+}
+
+.contact-section h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.contact-form, .contact-map {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    flex: 1;
+}
+
+.contact-form h3, .contact-map h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    color: #333;
+}
+
+.contact-form button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.contact-form button:hover {
+    background-color: #555;
+}
+
+#map {
+    width: 100%;
+    height: 300px;
+    border-radius: 8px;
+}
